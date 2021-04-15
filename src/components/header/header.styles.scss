@@ -4,13 +4,13 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
- 
+
   .logo-container {
     height: 100%;
     width: 70px;
     padding: 25px;
 
-    img{
+    img {
       width: 150px;
     }
   }
@@ -24,6 +24,10 @@
 
     .option {
       padding: 10px 15px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
