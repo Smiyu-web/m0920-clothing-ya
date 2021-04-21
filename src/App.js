@@ -9,6 +9,7 @@ import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUp from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import { auth, createUserProfileDocument } from "./firebase/firebase.util";
 import { addCollectionAndDocuments } from "./firebase/firebase.util";
+import CheckOutPage from "./pages/checkout/checkout-page.component";
 
 const PageNotFound = () => (
   <div>
@@ -57,6 +58,7 @@ function App({ collectionArray }) {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/shop" component={ShopPage} />
+        <Route path="/checkout" component={CheckOutPage} />
         <Route
           path="/signin"
           render={() =>
